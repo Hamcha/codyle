@@ -1,0 +1,25 @@
+# KNF braces
+-A8
+
+# 8-space tabs (brutal!)
+--indent=tab=8
+
+# PAD ALL THE THINGS
+-p
+-H
+-S
+-K
+-w
+-Y
+-M
+
+# UNPAD ALL THE OTHER THINGS
+-U
+-xe
+-xy
+
+# char *foo3;
+-W3
+
+# REMOVE BRACKETS THAT AREN'T NEEDED, YO
+-xj

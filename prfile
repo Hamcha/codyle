@@ -1,0 +1,3 @@
+Improved coding style
+
+In order to get more contributor and a more readable code, I chose OpenBSD KNF, which is designed to also highlight types for easier debugging/troubleshooting.

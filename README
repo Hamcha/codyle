@@ -1,0 +1,2 @@
+Requires hub (already setup and latest version pls, as it has pull-request -F).
+Best bot ever, core written in shellscript (and let's try to keep it bash-free, ok?)
