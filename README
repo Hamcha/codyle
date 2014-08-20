@@ -1,2 +1,8 @@
 Requires astyle & hub (already setup and latest version pls, as it has pull-request -F).
 Best bot ever, mostly written in shellscript (and let's try to keep it bash-free, ok?)
+
+
+TODO
+
+- Same PR message is boring and not that credible, make a prfile generator (can be python, ruby, whatever)
+- Script that searches for C/C++ repos and calls fork.sh on them (again, most langs acceptable)
