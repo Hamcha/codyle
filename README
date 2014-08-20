@@ -1,7 +1,8 @@
-Requires astyle & hub (already setup and latest version pls, as it has pull-request -F).
+Requires astyle + jq + hub (already setup and latest version pls, as it has pull-request -F).
 Best bot ever, mostly written in shellscript (and let's try to keep it bash-free, ok?)
 
 
 TODO
 
+- Make mini conf, at least for the username
 - Same PR message is boring and not that credible, make a prfile generator (can be python, ruby, whatever)
