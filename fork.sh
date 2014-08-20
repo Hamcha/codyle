@@ -2,12 +2,14 @@
 
 # Get repo
 URL="https://api.github.com/search/repositories?q=language:c&sort=updated&order=desc&per_page=1"
-PAIR=`curl ${URL} | grep full_name | sed 's/.*"\([^"]*\)".*,/\1/ig'`
-IFS='/'
-read VICTIM REPO
+PAIR=`curl ${URL} | jq -r '.items[0].full_name'`
+#PAIR="hamcha/OlegDB"
+VICTIM=`echo ${PAIR} | cut -d / -f 1`
+REPO=`echo ${PAIR} | cut -d / -f 2`
 
 # Check if dir already exists (and quit if so)
 if [ -d $REPO ]; then
+	echo "Repository already exists"
 	exit
 fi
 
